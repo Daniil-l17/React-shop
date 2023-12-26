@@ -1,0 +1,186 @@
+$bg-color: #fff; //container background-color;
+$basic-dark-color: #212121; //color of the spinner
+$border-width: 4px; //width of spinners border
+$basic-spinner-dimensions: 125px; //width and height of spinner
+$main-spinner-dimensions: $basic-spinner-dimensions - $border-width * 2; //width and height of bigger circle
+$small-spinner-dimensions: $main-spinner-dimensions * 0.7; //width and height of smaller circle
+
+
+.detail{
+  background: #191919;
+  padding: 24px;
+  border-radius: 6px;
+}
+
+.norep{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.mai{
+  display: flex;
+      justify-content: space-between;
+      column-gap: 90px;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  >h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  >p{
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: rgb(94, 39, 145);
+  }
+  >span{
+    font-size: 17px;
+  }
+  >h6{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+}
+
+.btnfooter{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 33px;
+}
+
+.active{
+  width: 129px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #6C3EC0;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.red{
+  width: 129px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 6px;
+background: rgb(224, 14, 10);
+color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+}
+
+
+.spinners {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+align-items: center;
+  
+  .spinner-block {
+    width: $basic-spinner-dimensions;
+    text-align: center;
+    margin-right: 83px;
+    
+    &:nth-child(5n) {
+      margin-right: 0px;
+    }
+    
+    h2 {
+      font: {
+        family: 'Pacifico', cursive;
+        size: 17px;
+      }
+      color: $basic-dark-color;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+/* YOU NEED THESE STYLES */
+
+/* spinner style */
+.spinner {
+  position: relative;
+  width: $basic-spinner-dimensions;
+  height: $basic-spinner-dimensions;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+}
+
+/* spinner-1 styles */
+.spinner.spinner-1 {
+
+  @keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anti-rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+&:before {
+  width: $main-spinner-dimensions;
+  height: $main-spinner-dimensions;
+  border-bottom-color: $basic-dark-color;
+  border-right-color: $basic-dark-color;
+  border-top-color: rgba($basic-dark-color, 0);
+  border-left-color: rgba($basic-dark-color, 0);
+  top: 0px;
+  left: 0px;
+  animation: rotate-animation 1s linear 0s infinite;
+}
+
+&:after {
+  width: $small-spinner-dimensions;
+  height: $small-spinner-dimensions;
+  border-bottom-color: $basic-dark-color;
+  border-right-color: $basic-dark-color;
+  border-top-color: rgba($basic-dark-color, 0);
+  border-left-color: rgba($basic-dark-color, 0);
+  top: ($main-spinner-dimensions - $small-spinner-dimensions) / 2;
+  left: ($main-spinner-dimensions - $small-spinner-dimensions) / 2;
+  animation: anti-rotate-animation 0.85s linear 0s infinite;
+}
+}
+
+
+.glav{
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+}
+

@@ -1,0 +1,28 @@
+.footer{
+  border-radius: 6px;
+background: #191919; 
+width: 100%;
+margin-top: 30px;
+margin-bottom: 40px;
+}
+
+.ftr{
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  svg{
+    font-size: 29px;
+    cursor: pointer;
+    >path{
+      fill: #6C3EB8;
+    }
+  }
+  >h1{
+    color: #6C3EB8;
+font-size: 21px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+}

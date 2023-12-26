@@ -1,0 +1,151 @@
+.cars{
+  background-color: #191919;
+  padding: 25px;
+  >h1{
+    text-align: center;
+    font-size: 35px;
+    color: #6C3EB8;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+}
+
+.glav{
+  text-align: center;
+  font-size: 30px;
+  color: #6C3EB8;
+  font-weight: 600;
+  margin-bottom: 120px;
+}
+
+.sss{
+  svg{
+    font-size: 85px;
+    fill: white;
+  }
+}
+
+.flexs{
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 660px;
+  overflow: auto;
+}
+
+.tov{
+  width: 400px;
+}
+
+.imd{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.inf{
+  background-color: #212123;
+  padding: 23px;
+  >h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  >p{
+    margin-bottom: 10px;
+    color: #6C3EB8;
+  }
+  >h6{
+    font-size: 18px;
+  }
+}
+
+.btr{
+  width: 119px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 6px;
+background: #6C3EB8;
+color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+  &:hover{
+    background: red;
+    transition: all 0.5s ease-in;
+  }
+}
+
+.animat{
+  background-color: #191919;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 47px;
+  >h1{
+    text-align: center;
+    color: #6C3EB8;
+    font-size: 25px;
+  }
+}
+
+.texn{
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  font-size: 40px;
+}
+
+
+
+.van{
+  >svg{
+    fill: #6C3EB8;
+  }
+}
+
+.rad{
+  >svg{
+    fill: #61dafb;
+  }
+}
+.ts{
+  >svg{
+    fill: #3178c6;
+  }
+}
+.js{
+  >svg{
+    fill: #efd81d;
+  }
+}
+.dm{
+  >svg{
+    fill: white;  
+  }
+}
+.tail{
+  >svg{
+    fill: #38bdf8;  
+  }
+}
+
+.rem{
+  width: 79px;
+  height: 30px;
+  margin-top: 15px;
+  flex-shrink: 0;
+  border-radius: 6px;
+background: rgb(184, 62, 62);
+color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+}
+

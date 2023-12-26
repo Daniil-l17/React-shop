@@ -1,0 +1,132 @@
+header{
+  padding: 20px 0px;
+  //background-color: #242424;
+  width: 100%;
+}
+
+.hdRow{
+  @apply flex items-center justify-between;
+  >img{
+    width: 100px;
+  }
+}
+
+.inp{
+  position: relative;
+  svg{
+    font-size: 20px;
+    cursor: pointer;
+  }
+  @apply flex items-center ;
+  border-radius: 6px;
+background: #191919;
+padding: 9px 10px;
+font-size: 13px;
+width: 353px;
+  >input {
+    margin-left: 20px;
+  }
+}
+
+.sp{
+  background: #8B57C6;
+  width: 15px;
+  position: absolute;
+  height: 15px;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 50px;
+  color: white;
+  right: -3px;
+  top: 14px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center
+}
+
+.shop{
+  @apply flex items-center text-2xl;
+  svg{
+    cursor: pointer;
+  }
+}
+
+.search{
+  position: absolute;
+}
+
+.infsa{
+  position: absolute;
+  top: 40px;
+  background: #576067;
+  width: 100%;
+  left: 0px;
+  border-radius: 6px;
+  padding: 9px 10px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 24px;
+}
+
+.adv{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gea{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.imagesUser{
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .hdRow{
+    >span{
+      display: none;
+    }
+  }
+  .shop{
+    display: none;
+  }
+}
+
+  .menu{
+    display: none;
+  }
+
+@media screen and (max-width: 900px) {
+  .shop{
+    display: flex !important;
+  }
+  .menu{
+    display: block;
+    .active{
+      position: fixed;
+      background: #191919;
+      left: 0;
+      height: 300px;
+      width: 100%;
+      top: 86px;
+      opacity: 0.9;
+    }
+  }
+}
