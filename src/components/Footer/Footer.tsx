@@ -7,7 +7,7 @@ const Footer: FC = () => {
   return (
     <footer className={style.footer}>
       <div className={style.ftr}>
-        <img src="./../../../src/components/products/img/LOGO 1.svg" alt="" />
+        <img src="./../../../src/img/LOGO 1.svg" alt="" />
         <h1>React Shop</h1>
         <div style={{ columnGap: 30 }} className="flex items-center">
           <a href="https://github.com/Daniil-l17" target='_blank'>

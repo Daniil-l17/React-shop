@@ -27,7 +27,7 @@ const Products: FC<prod> = ({ el }) => {
         <div
           className={style.item}
           style={{
-            backgroundImage: `url(./../../../src/components/products/img/${el.imageUrl})`,
+            backgroundImage: `url(./../../../src/img/${el.imageUrl})`,
             height: 180,
           }}
         ></div>
