@@ -36,7 +36,7 @@ const Header: FC = () => {
         <Link to="/">
           <img
             style={{ cursor: 'pointer' }}
-            src="../../../src/img/LOGO 1.svg"
+            src="./LOGO 1.svg"
             width={120}
             alt=""
           />
@@ -123,7 +123,7 @@ const Header: FC = () => {
           <div className="relative flex">
             <Link to="/carzina" style={{ display: 'flex', marginLeft: '25px' }}>
               <img
-                src="./../../../src/components/img/shop.svg"
+                src="./shop.svg"
                 className="cursor-pointer relative"
                 alt=""
               />
