@@ -30,7 +30,7 @@ const Carzina: FC = () => {
                 <div
                   className={style.imd}
                   style={{
-                    backgroundImage: `url(./../../../src/components/products/img/${e.imageUrl}`,
+                    backgroundImage: `url(${e.imageUrl})`,
                     height: 200,
                   }}
                 ></div>

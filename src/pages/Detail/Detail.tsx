@@ -33,7 +33,7 @@ const Detail: FC = () => {
             <div
               className={style.norep}
               style={{
-                backgroundImage: `url(./../../../src/components/products/img/${data?.imageUrl})`,
+                backgroundImage: `url(/${data?.imageUrl})`,
                 width: 1250,
                 height: 450,
               }}

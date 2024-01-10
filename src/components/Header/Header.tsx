@@ -36,7 +36,7 @@ const Header: FC = () => {
         <Link to="/">
           <img
             style={{ cursor: 'pointer' }}
-            src="./LOGO 1.svg"
+            src="/LOGO 1.svg"
             width={120}
             alt=""
           />
@@ -66,7 +66,7 @@ const Header: FC = () => {
                       <div
                         className={style.adv}
                         style={{
-                          backgroundImage: `url(./../../../src/components/products/img/${e.imageUrl})`,
+                          backgroundImage: `url(${e.imageUrl})`,
                           width: 200,
                           height: 85,
                         }}
@@ -123,7 +123,7 @@ const Header: FC = () => {
           <div className="relative flex">
             <Link to="/carzina" style={{ display: 'flex', marginLeft: '25px' }}>
               <img
-                src="./shop.svg"
+                src="/shop.svg"
                 className="cursor-pointer relative"
                 alt=""
               />
